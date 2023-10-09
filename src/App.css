@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  display: flex;
+}
+main {
+  padding: 10px;
+}
+
+.title {
+  font-size: 3rem;
+  display: grid;
+  place-items: center;
+}
+
+/* Sidebar */
+.sidebar {
+  background: white;
+  color: black;
+  height: 100vh;
+}
+
+.top_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.logo {
+  font-size: 18px;
+  line-height: 0;
+}
+.bars {
+  width: 30px;
+  padding-top: 100px;
+  padding-left: 5px;
+}
+.hide {
+  display: none;
+}
+
+
+
+.routes {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.link {
+  display: flex;
+  color: rgb(6, 6, 6);
+  gap: 10px;
+  padding: 5px 10px;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.link:hover {
+  border-right: 4px solid white;
+  background: rgb(224, 224, 227);
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+/* .active {
+  border-right: 4px solid white;
+  background: rgb(190, 190, 191);
+} */
+.link_text {
+  white-space: nowrap;
+  font-size: 15px;
+}
+/* .sideContainer{
+  color: black;
+  padding-left: 180px;
+} */
