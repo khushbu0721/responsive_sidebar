@@ -35,7 +35,7 @@ export default function Sidebar({ children }) {
         
       </nav>
     </aside>
-<section className={`w-[1000px] h-[570px]  bg-gray-100  ${expanded ? "ml-0":"ml-[75px]"} `}>
+<section className={`w-[1200px] h-[570px]  bg-gray-100  ${expanded ? "ml-0":"ml-[75px]"} `}>
   <div className="text-gray-600 ml-[20px] ">
     <h5 className="font-bold ">Dashboard</h5>
     <h6>Good Afternoon, NeoPhyte</h6>
@@ -54,12 +54,13 @@ export function SidebarItem({ icon, text, active, alert }) {
       relative flex items-center py-2 px-3 my-1
       font-medium rounded-md cursor-pointer 
       transition-colors group
-        space-x-6
-        ${expanded? "w-60":"w-16"}
+      
+        
+        ${expanded? "w-44":"w-10 pt-1 pb-1 "}
          ${
           active
           ? "bg-gradient-to-tr from-emerald-300 to-emerald-200 text-emerald-600 "
-            : "hover:bg-emerald-200 text-gray-600"
+            : "hover:bg-emerald-200  text-gray-600 "
         }
     `}
     >
@@ -71,23 +72,16 @@ export function SidebarItem({ icon, text, active, alert }) {
         {text}
         
       </span>  
-      {alert && (
-        <div
-        className={`absolute right-2 w-2 h-2 rounded bg-emerald-400 ${
-          expanded ? "" : "top-6"
-          }
-          `}
-        />
-      )}
+
       
       {!expanded && (
         <div
           className={`
           absolute left-full rounded-md px-2 py-1 ml-4
           bg-emerald-100 text-emerald-800 text-sm
-          invisible opacity-20 -translate-x-3 transition-all
+          invisible opacity-20 translate-x-3 transition-all
           group-hover:visible group-hover:opacity-100 group-hover:translate-x-0
-          w-30
+          w-[110px] 
       `}
         >
           {text}
