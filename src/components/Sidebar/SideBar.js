@@ -77,7 +77,7 @@ export function SidebarItem({ icon, text, active, alert }) {
       {!expanded && (
         <div
           className={`
-          absolute left-full rounded-md px-2 py-1 ml-4
+          absolute left-full rounded-md px-2 py-2 ml-6
           bg-emerald-100 text-emerald-800 text-sm
           invisible opacity-20 translate-x-3 transition-all
           group-hover:visible group-hover:opacity-100 group-hover:translate-x-0
